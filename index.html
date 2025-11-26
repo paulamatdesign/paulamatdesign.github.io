@@ -7,84 +7,79 @@
   <title>Paul Amat - UX Designer</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
     body {
-      background-color: rgb(254, 245, 240);
-      background-image: linear-gradient(0deg, rgb(255, 244, 222), transparent);
-
-      font-family: "Rubik", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
       font-weight: 300;
-
+      font-style: normal;
+      background-color: white;
+      color: #1D1D1B;
+    }
+    a, dt {
+      font-weight: 700;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 720;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: 410;
+    h2, h3, h4, h5, h6 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .zone-header {
+      background-color: #E1F813;
+    }
+    .zone-contact {
+      background-color: #1D1D1B;
+      color: white;
+    }
+    .btn-circle {
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-circle .material-symbols-rounded {
+      font-size: 24px;
     }
 
   </style>
 </head>
 
-<body class="py-5">
+<body>
 
-  <div class="mx-auto px-3 px-md-4" style="max-width: 800px;">
-
-    <h1 class="mb-3">
-      Hi, I am Paul Amat
-    </h1>
-
-    <p class="lead">
-      Senior UX Designer, Researcher and Data Analyst.
-    </p>
-
-    <p>
-      For the past seven years, I’ve been applying insights from the social sciences to create user-centered designs that balance user needs with business goals. I work closely with data analysts and use tools like R and MAXQDA to uncover meaningful patterns and behavioral insights that inform my design process. I’m currently based in Paris, France.
-    </p>
-
-    <div class="container text-center my-5">
-      <div class="row align-items-start">
-        <div class="col">
-          <dl>
-            <dt class="display-4 mb-1">
-              💡
-            </dt>
-            <dd class="small text-muted">
-              <mark><strong>UX Design</strong></mark>
-            </dd>
-          </dl>
-        </div>
-        <div class="col">
-          <dl>
-            <dt class="display-4 mb-1">
-              🧠
-            </dt>
-            <dd>
-              <mark><strong>Research</strong></mark>
-            </dd>
-          </dl>
-        </div>
-        <div class="col">
-          <dl>
-            <dt class="display-4 mb-1">
-              🔍
-            </dt>
-            <dd>
-              <mark><strong>Data</strong></mark>
-            </dd>
-          </dl>
-        </div>
-      </div>
+  <div class="zone-header">
+    <div class="container py-5 mx-auto px-3 px-md-4" style="max-width: 800px;">
+      <h1 id="top">
+        Paul Amat
+      </h1>
+      <p class="lead">
+        UX · UR · Design Systems · DataViz
+      </p>
+      <p>
+        UX Designer with a passion for user research, design systems, and data visualization. I enjoy creating intuitive and engaging user experiences by combining research insights with design principles. Always eager to learn and explore new trends in UX and data analysis.
+      </p>
+      <a href="https://www.linkedin.com/in/paul-amat/" class="btn btn-primary">LinkedIn</a>
     </div>
+  </div>
 
-    <h2 class="mt-5 mb-3">
+  <div>
+    <div class="container py-5 mx-auto px-3 px-md-4" style="max-width: 800px;">
+      <h2>
       UX Articles
     </h2>
 
@@ -122,7 +117,9 @@
 
     </dl>
 
-    <h2 class="mt-5 mb-3">Data Articles</h2>
+    <h2>
+      Data Articles
+    </h2>
 
     <dl>
 
@@ -158,7 +155,9 @@
 
     </dl>
 
-    <h2 class="mt-5 mb-3">Certifications</h2>
+    <h2>
+      Certifications
+    </h2>
 
     <dl>
       <dt>
@@ -196,13 +195,18 @@
         Paul Ekman Group (2021)
       </dd>
     </dl>
-    
-    <p class="my-5 pt-5 d-flex justify-content-center" style="border-top: 1px solid rgba(0, 0, 0, 0.1);">
-      <a href="https://www.linkedin.com/in/paul-amat/" class="btn btn-outline-primary">LinkedIn</a>
-    </p>
+    </div>
+  </div>
+
+  <div>
+    <div class="container py-5 mx-auto px-3 px-md-4 d-flex justify-content-center" style="max-width: 800px;">
+      <a href="#" class="btn btn-outline-secondary btn-circle">
+        <span class="material-symbols-rounded">arrow_upward</span>
+      </a>
+    </div>
+  </div>
 
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
