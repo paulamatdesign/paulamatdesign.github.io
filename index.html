@@ -44,6 +44,13 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
+    h2:first-of-type {
+      margin-top: 0;
+    }
+    .container {
+      padding: 2.5rem 2rem 2.5rem 2rem;
+      max-width: 800px;
+    }
     .zone-header {
       background-color: #F5DC53;
     }
@@ -82,7 +89,7 @@
 <body>
 
   <div class="zone-header">
-    <div class="container py-5" style="max-width: 800px;">
+    <div class="container">
       <h1 id="top">
         Paul Amat
       </h1>
@@ -97,7 +104,7 @@
   </div>
 
   <div class="zone-tools">
-    <div class="container py-5 " style="max-width: 800px;" data-bs-theme="dark">
+    <div class="container" data-bs-theme="dark">
       <img src="assets/tool-figma.svg" data-bs-title="Figma" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-dovetail.svg" data-bs-title="Dovetail" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-maze.svg" data-bs-title="Maze" data-bs-toggle="tooltip" data-bs-placement="top">
@@ -110,7 +117,7 @@
   </div>
 
   <div>
-    <div class="container py-4" style="max-width: 800px;">
+    <div class="container">
       <h2>
       UX Articles
     </h2>
@@ -263,7 +270,7 @@
   </div>
 
   <div>
-    <div class="container py-3 d-flex justify-content-center" style="max-width: 800px; margin-bottom: 6rem;">
+    <div class="container d-flex justify-content-center" style="padding-top: 0; padding-bottom: 6rem;">
       <a href="#" class="btn btn-outline-secondary btn-circle">
         <span class="material-symbols-rounded">arrow_upward</span>
       </a>
