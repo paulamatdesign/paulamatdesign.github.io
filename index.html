@@ -51,23 +51,42 @@
       padding: 2.5rem 2rem 2.5rem 2rem;
       max-width: 800px;
     }
-    .zone-header {
+    #zone-header {
       background-color: #F5DC53;
     }
-    .zone-contact {
+    #zone-contact {
       background-color: #1D1D1B;
       color: white;
     }
-    .zone-tools {
+    #zone-tools {
       background-color: #1D1D1B;
     }
-    .zone-tools .container {
-      display: flex;
-      overflow-y: scroll;
+    #zone-clients {
+      background-color: #CDC6B1;
     }
-    .zone-tools img {
-      height: 36px;
+    .zone-with-slider h2 {
+      font-family: "Funnel", sans-serif;
+      font-size: small;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+    }
+    #zone-tools h2 {
+      color: #868682;
+    }
+    #zone-clients h2 {
+      color: #575242;
+    }
+    #zone-tools img {
+      height: 32px;
       margin-right: 16px;
+    }
+    #zone-clients img {
+      height: 24px;
+      margin-right: 24px;
     }
     .btn-circle {
       width: 48px;
@@ -78,19 +97,17 @@
       justify-content: center;
       align-items: center;
     }
-
     .btn-circle .material-symbols-rounded {
       font-size: 24px;
     }
-
   </style>
 </head>
 
 <body>
 
-  <div class="zone-header">
+  <div id="zone-header">
     <div class="container">
-      <h1 id="top">
+      <h1>
         Paul Amat
       </h1>
       <p class="lead">
@@ -99,13 +116,17 @@
       <p>
         UX Designer with a passion for user research, design systems, and data visualization. I enjoy creating intuitive and engaging user experiences by combining research insights with design principles. Always eager to learn and explore new trends in UX and data analysis.
       </p>
-      <a href="https://www.linkedin.com/in/paul-amat/" class="btn btn-primary">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/paul-amat/" class="btn btn-primary" rel="noopener noreferrer" target="_blank">LinkedIn</a>
     </div>
   </div>
 
-  <div class="zone-tools">
+  <div id="zone-tools" class="zone-with-slider">
     <div class="container" data-bs-theme="dark">
-      <img src="assets/tool-figma.svg" data-bs-title="Figma" data-bs-toggle="tooltip" data-bs-placement="top">
+      <h2>
+        I love those tools
+      </h2>
+      <div class="slider">
+        <img src="assets/tool-figma.svg" data-bs-title="Figma" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-dovetail.svg" data-bs-title="Dovetail" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-maze.svg" data-bs-title="Maze" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-usertesting.svg" data-bs-title="UserTesting" data-bs-toggle="tooltip" data-bs-placement="top">
@@ -113,6 +134,7 @@
       <img src="assets/tool-powerbi.svg" data-bs-title="Power BI" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-rstudio.svg" data-bs-title="R Studio" data-bs-toggle="tooltip" data-bs-placement="top">
       <img src="assets/tool-python.svg" data-bs-title="Python" data-bs-toggle="tooltip" data-bs-placement="top">
+      </div>
     </div>
   </div>
 
@@ -193,6 +215,27 @@
       </dd> -->
 
     </dl>
+    </div>
+    </div>
+
+    <div id="zone-clients" class="zone-with-slider">
+    <div class="container">
+      <h2>
+        I worked with them
+      </h2>
+      <div class="slider">
+        <img src="assets/logo-airbus.svg" data-bs-title="Airbus" data-bs-toggle="tooltip" data-bs-placement="top">
+      <img src="assets/logo-bnp.svg" data-bs-title="BNP Paribas" data-bs-toggle="tooltip" data-bs-placement="top">
+      <img src="assets/logo-canalplus.svg" data-bs-title="CANAL+" data-bs-toggle="tooltip" data-bs-placement="top">
+      <img src="assets/logo-loreal.svg" data-bs-title="L'Oréal" data-bs-toggle="tooltip" data-bs-placement="top">
+      <img src="assets/logo-pacifica.svg" data-bs-title="Pacifica" data-bs-toggle="tooltip" data-bs-placement="top">
+      <img src="assets/logo-psa.svg" data-bs-title="PSA" data-bs-toggle="tooltip" data-bs-placement="top">
+      </div>
+      </div>
+      </div>
+
+      <div id="zone-certifications">
+    <div class="container">
 
     <h2>
       Certifications
