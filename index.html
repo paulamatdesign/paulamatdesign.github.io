@@ -34,7 +34,8 @@
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
       font-family: "Funnel Display", sans-serif;
       font-weight: 800;
     }
@@ -126,6 +127,21 @@
     .btn-circle .material-symbols-rounded {
       font-size: 24px;
     }
+
+    .highlighted {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none !important;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlighted h3 {
+      font-size: larger;
+      font-weight: 600;
+      margin: 0;
+    }
+
   </style>
 </head>
 
@@ -171,32 +187,20 @@
   <div>
     <div class="container">
       <h2>
-        UX Calculator
+        UX Apps
       </h2>
-      <dl>
-        <dt>
-          <a href="https://uxscores.streamlit.app/" target="_blank">
-            UX Scores: standardized questionnaires calculator
-          </a>
-        </dt>
-        <dd class="text-muted">
-          uxscores.streamlit.app
-        </dd>
-      </dl>
 
-      <h2>
-        Textual Analysis App
-      </h2>
-      <dl>
-        <dt>
-          <a href="https://paulamat.shinyapps.io/textualanalysis/" target="_blank">
-            Load your interview transcripts to get a textual analysis.
-          </a>
-        </dt>
-        <dd class="text-muted">
-          shinyapps.io
-        </dd>
-      </dl>
+      <a href="https://uxscores.streamlit.app/" target="_blank">
+        <div class="highlighted">
+          <h3>UX Scores: UX standardized questionnaires calculator</h3>
+        </div>
+      </a>
+
+      <a href="https://paulamat.shinyapps.io/textualanalysis/" target="_blank">
+        <div class="highlighted">
+          <h3>Textual Analysis: interview transcripts analysis</h3>
+        </div>
+      </a>
 
       <h2>
         UX Articles
