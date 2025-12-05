@@ -34,8 +34,7 @@
     }
 
     h1,
-    h2,
-    h3 {
+    h2 {
       font-family: "Funnel Display", sans-serif;
       font-weight: 800;
     }
@@ -45,7 +44,7 @@
       font-weight: 500;
     }
 
-    dd {
+    .text-muted {
       font-size: small;
     }
 
@@ -128,17 +127,30 @@
       font-size: 24px;
     }
 
-    .highlighted {
+    .highlight {
+      margin-bottom: 1rem;
+    }
+
+    .linkcard {
       background-color: white;
-      padding: 1rem 2rem;
+      border: 2px solid cornflowerblue;
+      padding: 1rem 1.2rem;
       border-radius: 8px;
       text-decoration: none !important;
       margin-bottom: 0.5rem;
     }
 
-    .highlighted h3 {
-      font-size: larger;
-      font-weight: 600;
+    .commentcard p {
+      margin: 0;
+    }
+
+    .linkcard:hover {
+      border: 2px solid #0b6ffd;
+    }
+
+    .linkcard h3 {
+      font-weight: 500;
+      font-size: medium;
       margin: 0;
     }
 
@@ -190,17 +202,37 @@
         UX Apps
       </h2>
 
-      <a href="https://uxscores.streamlit.app/" target="_blank">
-        <div class="highlighted">
-          <h3>UX Scores: UX standardized questionnaires calculator</h3>
+      <div class="highlight">
+        <a href="https://uxscores.streamlit.app/" target="_blank">
+          <div class="linkcard">
+            <h3>UX Scores</h3>
+          </div>
+        </a>
+        <div class="commentcard">
+          <p>
+            Simple calculator for UX standardized questionnaires (SUS, UMUX-Lite, etc.).
+          </p>
+          <p class="text-muted">
+            streamlit.app
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a href="https://paulamat.shinyapps.io/textualanalysis/" target="_blank">
-        <div class="highlighted">
-          <h3>Textual Analysis: interview transcripts analysis</h3>
+      <div class="highlight">
+        <a href="https://paulamat.shinyapps.io/transcriptanalyzer/" target="_blank">
+          <div class="linkcard">
+            <h3>Transcript Analyzer</h3>
+          </div>
+        </a>
+        <div class="commentcard">
+          <p>
+            Load interview transcripts to start a textual quantitative analysis.
+          </p>
+          <p class="text-muted">
+            shinyapps.io
+          </p>
         </div>
-      </a>
+      </div>
 
       <h2>
         UX Articles
